@@ -64,7 +64,6 @@ namespace id_list_sort
 				Console.WriteLine ("IDs2:" + IDs2.Count);
 				Console.WriteLine ("inchi2:" + inchi2.Count);
 
-
 				foreach (var r in line3) {
 					string[] ID = r.Split (new string[] {".3d.mol\t"}, StringSplitOptions.RemoveEmptyEntries);
 					if (ID.Length > 1) {
@@ -80,10 +79,7 @@ namespace id_list_sort
 
 				Console.WriteLine ("IDs3:" + IDs3.Count);
 				Console.WriteLine ("inchi3:" + inchi3.Count);
-
-
 				List<string> IDall = new List<string> ();
-
 
 				foreach (var i in IDs2) {
 					if (!IDall.Contains (i)) {
@@ -95,12 +91,9 @@ namespace id_list_sort
 						}
 					}
 				}
-
 				IDall.Sort ();
 
-
 				foreach (var id in IDall) {
-
 					sb2.Append (id);
 					sb3.Append (id);
 
@@ -127,8 +120,6 @@ namespace id_list_sort
 						sb3.AppendLine ("");
 					}
 				}
-
-
 				DateTime dt = DateTime.Now;
 				string dtString = dt.ToString ("yyyyMMddHHmmss");
 
@@ -137,14 +128,11 @@ namespace id_list_sort
 					Encoding.UTF8);
 				writer2.Write (sb2.ToString ());
 				writer2.Close ();
-
 				StreamWriter writer3 = new StreamWriter ("ID_full_" + dtString + "_3D.txt",
 					false,  // 上書き （ true = 追加 ）
 					Encoding.UTF8);
 				writer3.Write (sb3.ToString ());
 				writer3.Close ();
-
-
 				Console.WriteLine ("finished");
 
 			} else {
