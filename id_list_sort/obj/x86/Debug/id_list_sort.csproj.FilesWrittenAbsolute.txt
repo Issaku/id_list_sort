@@ -1,0 +1,5 @@
+/Users/yamada/Projects/id_list_sort/id_list_sort/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/yamada/Projects/id_list_sort/id_list_sort/bin/Debug/id_list_sort.exe.mdb
+/Users/yamada/Projects/id_list_sort/id_list_sort/bin/Debug/id_list_sort.exe
+/Users/yamada/Projects/id_list_sort/id_list_sort/obj/x86/Debug/id_list_sort.exe
+/Users/yamada/Projects/id_list_sort/id_list_sort/obj/x86/Debug/id_list_sort.exe.mdb
